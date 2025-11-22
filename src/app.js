@@ -10,6 +10,7 @@ const requestRoutes = require('./routes/requests');
 const contactRoutes = require('./routes/contact');
 const uploadRoutes = require('./routes/uploads');
 const contentRoutes = require('./routes/content');
+const dataRoutes = require('./routes/data');
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use('/api/providers', providerRoutes);
 app.use('/api/requests', requestRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/uploads', uploadRoutes);
+app.use('/api/data', dataRoutes);
 app.use('/api', contentRoutes);
 
 // Error handler
